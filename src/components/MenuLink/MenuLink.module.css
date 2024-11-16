@@ -1,0 +1,8 @@
+.activeMenuItem {
+  background-color: var(--main-text-light);
+  color: #184015;
+}
+
+.menuItem {
+  color: var(--main-text-light);
+}
