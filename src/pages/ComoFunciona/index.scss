@@ -37,7 +37,7 @@
     margin-bottom: 10px;
 }
 
-.funcionamento button {
+.funcionamento a {
     margin-top: 50px;
     background-color: #1DB196;
     color: #e1ffff;
@@ -47,9 +47,10 @@
     border-radius: 8px;
     transition: 0.4s;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.funcionamento button:hover {
+.funcionamento a:hover {
     border: 2px solid #1DB196;
     background-color: transparent;
     color: #1DB196;
