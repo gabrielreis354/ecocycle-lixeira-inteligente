@@ -1,8 +1,7 @@
 .activeMenuItem {
-  background-color: var(--main-text-light);
-  color: #184015;
+  color: #2d8676;
 }
 
 .menuItem {
-  color: var(--main-text-light);
+  color: #2b3331;
 }

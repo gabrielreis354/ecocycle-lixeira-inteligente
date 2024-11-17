@@ -1,0 +1,21 @@
+.links  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1DB196;
+}
+
+.logoTitle {
+    color: #223330;
+    font-size: 36px;
+    font-weight: bold;
+
+}
