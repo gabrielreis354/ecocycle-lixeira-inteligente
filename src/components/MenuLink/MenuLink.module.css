@@ -1,7 +1,9 @@
 .activeMenuItem {
   color: #2d8676;
+  text-decoration: none;
 }
 
 .menuItem {
   color: #2b3331;
+  text-decoration: none;
 }
