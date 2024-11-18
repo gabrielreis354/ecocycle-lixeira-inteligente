@@ -1,59 +1,114 @@
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import "./Form.scss";
-export default function FaleConosco() {
-  return (
-    <div className={"containerForm"}>
-      <h2 className={"title"}>Fale Conosco</h2>
 
-      <div >
-        <div className={"inputWrapper"}>
-          <label className={"inputLabel"} htmlFor="nome">
+const schema = yup.object({
+  nome: yup.string().required("Nome é obrigatório"),
+  email: yup.string().email("Digite um email válido!").required("Email é obrigatório"),
+  tipo: yup
+    .string()
+    .required("Tipo é obrigatório")
+    .oneOf(["Empresa", "Pessoa Física"]), // Valida se o tipo é Empresa ou Pessoa Física
+  mensagem: yup.string().required("Mensagem é obrigatória"),
+});
+
+export default function FaleConosco() {
+  const [formCliente, setFormCliente] = useState({
+    nome: "",
+    email: "",
+    tipo: "",
+    mensagem: "",
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  const inserirCliente = (cliente) => {
+    setFormCliente(cliente);
+    reset();
+  };
+
+  useEffect(() => {
+    console.log(formCliente)
+  }, [formCliente]);
+
+  return (
+    <div className="containerForm">
+      <h2 className="title">Fale Conosco</h2>
+
+      <form onSubmit={handleSubmit(inserirCliente)}>
+        <div className="inputWrapper">
+          <label className="inputLabel" htmlFor="nome">
             Nome:
           </label>
           <input
             id="nome"
-            className={"input"}
+            className="input"
             type="text"
             placeholder=""
+            {...register("nome")}
           />
+          {errors.nome ? (
+            <span className="error">{errors.nome.message}</span>
+          ) : null}
         </div>
-        <div className={"inputWrapper"}>
-          <label className={"inputLabel"} htmlFor="email">
+        <div className="inputWrapper">
+          <label className="inputLabel" htmlFor="email">
             Email:
           </label>
           <input
             id="email"
-            className={"input"}
+            className="input"
             type="email"
             placeholder=""
+            {...register("email")}
           />
+          {errors.email ? (
+            <span className="error">{errors.email.message}</span>
+          ) : null}
         </div>
-        <div className={"inputWrapper"}>
-          <label className={"inputLabel"} htmlFor="tipo">
+        <div className="inputWrapper">
+          <label className="inputLabel" htmlFor="tipo">
             Tipo:
           </label>
-          <select name="tipo" id="tipo" className={"input"}>
+          <select name="tipo" id="tipo" className="input" {...register("tipo")}>
             <option>Empresa</option>
             <option>Pessoa Física</option>
           </select>
+          {errors.tipo ? (
+            <span className="error">{errors.tipo.message}</span>
+          ) : null}
         </div>
-        <div className={"inputWrapper"}>
-          <label className={"inputLabel"} htmlFor="mensagem">
+        <div className="inputWrapper">
+          <label className="inputLabel" htmlFor="mensagem">
             Mensagem:
           </label>
           <textarea
-            className={"input"}
+            className="input"
             name="mensagem"
             id="mensagem"
             cols="30"
-            rows="10"            
+            rows="10"
+            {...register("mensagem")}
           ></textarea>
-
-          <div className="buttonWrapper">
-            <button type="submit">Enviar</button>
-          </div>
-          
+          {errors.mensagem ? (
+            <span className="error">{errors.mensagem.message}</span>
+          ) : null}
         </div>
-      </div>
+
+        <div className="buttonWrapper">
+          <button type="submit">Enviar</button>
+        </div>
+
+      </form>
     </div>
   );
 }
