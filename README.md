@@ -37,7 +37,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 ## 🌟 Estrutura do Projeto
 
 ```plaintext
-lixeira-inteligente/
+ecocycle_manager/
 ├── public/          # Arquivos estáticos
 ├── src/             
 │   ├── assets/      # Imagens e outros arquivos estáticos
