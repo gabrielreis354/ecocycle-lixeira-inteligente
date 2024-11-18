@@ -150,7 +150,7 @@ function Home() {
       </div>
 
       <div className="container">        
-        <FaleConosco />
+        <FaleConosco />        
         <Equipe />
       </div>
     </div>
