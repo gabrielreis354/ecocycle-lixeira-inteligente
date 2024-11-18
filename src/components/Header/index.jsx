@@ -11,8 +11,7 @@ export default function Header() {
         <MenuLink to={"/"}>Home</MenuLink>
         <MenuLink to={"/funcionamento"}>Como Funciona</MenuLink>
         <MenuLink to={"/dashboard"}>Dashboard</MenuLink>
-      </div>
-      {/* <p>Tecnologias para Energia Sustentável e Gerenciamento de Resíduos</p> */}
+      </div>      
     </header>
   );
 }
