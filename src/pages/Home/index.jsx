@@ -1,6 +1,8 @@
-import './index.css'
+import './index.scss'
 import { useState } from 'react'
 import SvgArrow from '../../components/SvgArrow'
+import Equipe from "../../components/Equipe";
+import FaleConosco from "../../components/FaleConosco";
 
 function Home() {
   const [selectedProduct, setSelectedProduct] = useState("bin")
@@ -125,16 +127,19 @@ function Home() {
                   <div className='grid-square-little'> </div>
                 </div>
             </div>
-
-
-            
           </div>
-
-
-          
         </div>
       </div>
+
+      <div className="container">
+        <h1>Banner Hero</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <FaleConosco />
+        <Equipe />
+      </div>
+
     </div>
+    
   )
 }
 

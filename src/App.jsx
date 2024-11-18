@@ -3,10 +3,8 @@ import Router from './router/Router.jsx'
 function App() {
 
   return (  
-    <div>
-      <Router/>
-    </div>    
+    <Router/>
   )
 }
 
-export default App
+export default App;

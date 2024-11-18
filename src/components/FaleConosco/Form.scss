@@ -1,0 +1,38 @@
+.containerForm {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 24px;
+  color: #1db196;
+}
+
+.input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #1db196;
+  background-color: #223330;
+  color: #1db196;
+  outline: 0;
+}
+
+.inputLabel {
+  font-size: 18px;
+  color: #1db196;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.submitButton {
+}
