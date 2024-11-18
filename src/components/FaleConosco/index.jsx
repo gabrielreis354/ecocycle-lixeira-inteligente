@@ -47,6 +47,11 @@ export default function FaleConosco() {
             cols="30"
             rows="10"            
           ></textarea>
+
+          <div className="buttonWrapper">
+            <button type="submit">Enviar</button>
+          </div>
+          
         </div>
       </div>
     </div>

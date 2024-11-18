@@ -34,5 +34,25 @@
   align-items: flex-start;
 }
 
-.submitButton {
+textarea {
+  resize: none;
+}
+
+.buttonWrapper button {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 3px solid #1db196;
+  background-color: #1db196;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.buttonWrapper button:hover {
+  background-color: transparent;
+  border: 3px solid #1db196;
+  color: #1db196;
 }
