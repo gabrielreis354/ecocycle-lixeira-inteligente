@@ -55,13 +55,13 @@ function Home() {
           <div className='hero-object'>
             <div className='hero-object-form'>
               <form>
-                <label className={selectedProduct == 'bin' && 'checked'} >
+                <label className={selectedProduct == 'bin' ? 'checked' : ''} >
                   <input title='bin' type="radio" name='product' value='bin' checked={selectedProduct === 'bin'} onChange={handleChangeProduct}/>
                 </label>
-                <label className={selectedProduct == 'generator' && 'checked'} >
+                <label className={selectedProduct == 'generator' ? 'checked': ''} >
                   <input title='generator' type="radio" name='product' value='generator' checked={selectedProduct === 'generator'} onChange={handleChangeProduct}/>
                 </label>
-                <label className={selectedProduct == 'biodigester' && 'checked'} >
+                <label className={selectedProduct == 'biodigester' ? 'checked' : ''} >
                   <input title='biodigester' type="radio" name='product' value='biodigester' checked={selectedProduct === 'biodigester'} onChange={handleChangeProduct}/>
                 </label>
               </form>
