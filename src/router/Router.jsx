@@ -24,7 +24,7 @@ function Router() {
 				<Routes>
 					<Route index path='/' element={ <Home/> } />
 					<Route path="/funcionamento" element={<ComoFunciona />} />
-					<Route path="/dashboard" element={<Dashboard />} />
+					<Route path="/dashboard/*" element={<Dashboard />} />
 					<Route path='*' element={ <></> }/>
 				</Routes>
 
