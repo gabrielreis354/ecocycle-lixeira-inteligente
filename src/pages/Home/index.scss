@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  gap: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -90,8 +91,7 @@
   width: 100%;
   background: #0c4a3a10;
   overflow: hidden;
-
-  margin-bottom: 500px;
+  margin-bottom: 120px;
 }
 
 .home-hero-inner {
