@@ -1,0 +1,97 @@
+.relatorios-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .header {
+    background-color: #2d8c3b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .filters {
+      button {
+        background: white;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.active {
+          background-color: #1f5635;
+          color: white;
+        }
+
+        &:hover {
+          background-color: #4caf50;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 20px;
+
+    .chart-section {
+      margin-bottom: 40px;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    .table-section {
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+
+        th, td {
+          border: 1px solid #ddd;
+          text-align: left;
+          padding: 8px;
+        }
+
+        th {
+          background: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+          background: #f9f9f9;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: right;
+
+    button {
+      background-color: #2d8c3b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #1f5635;
+      }
+    }
+  }
+}
