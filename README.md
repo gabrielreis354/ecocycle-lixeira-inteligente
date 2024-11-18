@@ -38,15 +38,17 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 ```plaintext
 ecocycle_manager/
-├── public/          # Arquivos estáticos
+├── public/           # Arquivos estáticos
 ├── src/             
-│   ├── assets/      # Imagens e outros arquivos estáticos
-│   ├── components/  # Componentes React reutilizáveis
-│   ├── pages/       # Páginas principais do projeto
-│   ├── App.jsx      # Componente principal da aplicação
-│   └── main.jsx     # Ponto de entrada do React
-├── package.json     # Configuração de dependências
-└── vite.config.js   # Configuração do Vite
+│   ├── assets/       # Imagens e outros arquivos estáticos
+│   ├── components/   # Componentes React
+│   ├── pages/        # Páginas principais
+│   ├── router/       # Configuração das rotas
+│   ├── App.jsx       # Componente principal
+│   └── main.jsx      # Ponto de entrada
+├── package.json      # Configuração de dependências
+└── vite.config.js    # Configuração do Vite
+
 ```
 
 ---
