@@ -13,17 +13,17 @@ function Home() {
 
   const productsInfo = {
     "bin": {
-      "path": "url(../../public/images/bin.png)", 
+      "path": "url(/images/bin.png)", 
       "label": "Lixeira inteligente IOT",
       "top": "250px", "left": "365px"
     },
     "generator": {
-      "path": "url(../../public/images/generator.png)", 
+      "path": "url(/images/generator.png)", 
       "label": "Gerador elétrico à biogás",
       "top": "280px", "left": "375px"
     },
     "biodigester": {
-      "path": "url(../../public/images/biodigester.png)", 
+      "path": "url(/images/biodigester.png)", 
       "label": "Biodigestor inteligente residencial",
       "top": "280px", "left": "365px"
     }
