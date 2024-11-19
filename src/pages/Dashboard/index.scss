@@ -20,25 +20,25 @@
         font-weight: bold;
     }
 
-    .sidebar {
-        grid-area: sidebar;
-        background-color: #f4f4f4;
-        padding: 16px;
-        border-right: 1px solid #ddd;
-        align-items: start;
-        justify-content: start;
+    // .sidebar {
+    //     grid-area: sidebar;
+    //     background-color: #f4f4f4;
+    //     padding: 16px;
+    //     border-right: 1px solid #ddd;
+    //     align-items: start;
+    //     justify-content: start;
 
-        .menu-item {
-            margin-bottom: 12px;
-            font-size: 16px;
-            color: #333;
-            cursor: pointer;
+    //     .menu-item {
+    //         margin-bottom: 12px;
+    //         font-size: 16px;
+    //         color: #333;
+    //         cursor: pointer;
 
-            &:hover {
-                color: #4a90e2;
-            }
-        }
-    }
+    //         &:hover {
+    //             color: #4a90e2;
+    //         }
+    //     }
+    // }
 
     .main {
         grid-area: main;

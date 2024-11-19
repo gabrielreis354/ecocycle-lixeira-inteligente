@@ -1,56 +1,55 @@
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 300px;
-    gap: 150px;
-    background-color: #F0F4F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 150px;
+  background-color: #f0f4f3;
 }
 
 .sidebar h2 {
-    color: #1DB196;
-    font-size: 36px;
-    font-weight: 400;
+  color: #1db196;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 .menu-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
 }
 
 .menu-links a {
-    color: #1DB196;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
+  color: #1db196;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .menu-links a.active {
-    color: #2d8676;
+  color: #2d8676;
 }
 
 .menu-links a:hover {
-    color: #2d8676;
-    text-decoration: underline;
+  color: #2d8676;
+  text-decoration: underline;
 }
 
 .sidebar button {
-    cursor: pointer;
-    background-color: #1DB196;
-    color: #F0F4F3;
-    border: 2px solid #1DB196;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: 0.4s;
-    font-size: 16px;
+  cursor: pointer;
+  background-color: #1db196;
+  color: #f0f4f3;
+  border: 2px solid #1db196;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.4s;
+  font-size: 16px;
 }
 
 .sidebar button:hover {
-    background-color: transparent;
-    border: 2px solid #1DB196;
-    color: #1DB196;
+  background-color: transparent;
+  border: 2px solid #1db196;
+  color: #1db196;
 }

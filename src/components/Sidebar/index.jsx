@@ -9,7 +9,7 @@ export default function Sidebar() {
   };
   return (
     <div className="sidebar">
-      <nav className="">
+      <nav className="menu-links">
         <NavLink
           className={({isActive}) => [isActive ? "menu-item active" : "menu-item"].join(" ")}
           to="/dashboard/monitoramento"
