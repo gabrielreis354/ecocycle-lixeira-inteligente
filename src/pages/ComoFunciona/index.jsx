@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./index.scss";
 export default function ComoFunciona() {
   return (
@@ -82,7 +82,9 @@ export default function ComoFunciona() {
         </p>
       </section>
 
-      <Link to="/dashboard">Conhecer Plataforma</Link>
+      <div className="link-wrapper">
+        <Link to="/dashboard/monitoramento">Conhecer Plataforma</Link>
+      </div>
     </div>
   );
 }
