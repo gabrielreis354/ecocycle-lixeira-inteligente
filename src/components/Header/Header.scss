@@ -1,19 +1,21 @@
-.links  {
-    display: flex;
-    flex-direction: row;
-    gap: 20px
-}
-
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #F0F4F3;
+    background-color: #223330;
+    padding: 20px;
+
+    .links  {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;        
+    }
+
+    .logoTitle {
+        color: #1DB196;
+        font-weight: bold;
+    
+    }
 }
 
-.logoTitle {
-    color: #223330;
-    font-weight: bold;
-
-}

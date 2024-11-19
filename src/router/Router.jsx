@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom"
 import { useMemo } from "react"
 import ComoFunciona from "../pages/ComoFunciona"
 import Dashboard from "../pages/Dashboard"
-// import Header from '../components/Header'
+import Header from '../components/Header'
 import Footer from "../components/Footer"
 
 function Router() {
@@ -19,7 +19,7 @@ function Router() {
 	return (
 		<div className='content-wrapper'>
 			<div className='content'>
-				{/* {!isDashboardRoute && <Header />} */}
+				{!isDashboardRoute && <Header />}
 			
 				<Routes>
 					<Route index path='/' element={ <Home/> } />
