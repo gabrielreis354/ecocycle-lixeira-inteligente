@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "./index.scss";
-import data from "../../assets/Data/data.json";
 // import { LineChart, Line, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
-const Relatorio = () => {
+const Relatorio = ({data}) => {
   const [filtroInicio, setFiltroInicio] = useState("");
   const [filtroFim, setFiltroFim] = useState("");
 
@@ -52,7 +52,7 @@ const Relatorio = () => {
     const results = filtrarDados();
 
     setDadosFiltrados(results);
-  }, [filtroInicio, filtroFim]);
+  }, [filtroInicio, filtroFim, data]);
 
   useEffect(() => {
     const energia = dadosFiltrados.reduce(
@@ -76,6 +76,11 @@ const Relatorio = () => {
   const handlePrint = () => {
     window.print();
   };
+
+  const handleLimpar = () => {
+    setFiltroInicio("");
+    setFiltroFim("");
+  }
 
   return (
     <div className="relatorios-page">
@@ -122,7 +127,7 @@ const Relatorio = () => {
                 onChange={(e) => setFiltroFim(e.target.value)}
               />
             </div>
-            <button onClick={() => setFiltroInicio("") && setFiltroFim("")}>
+            <button onClick={handleLimpar}>
               Limpar Filtro
             </button>
           </div>
@@ -147,6 +152,7 @@ const Relatorio = () => {
                       day: "2-digit",
                       month: "2-digit",
                       year: "numeric",
+                      timeZone: "UTC",
                     })}
                   </td>
                   <td>{row.residuosProcessados} kg</td>
