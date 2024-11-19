@@ -23,7 +23,7 @@ export default function Dashboard() {
       </div>
 
 
-      <div className="footer">Footer</div>
+      {/* <div className="footer">Footer</div> */}
     </div>
   )
     ;
