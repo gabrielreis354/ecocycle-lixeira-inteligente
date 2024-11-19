@@ -102,6 +102,7 @@
 
 .frame-notice {
   display: flex;
+  gap:5px;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
@@ -234,17 +235,17 @@
 }
 
 .hero-object-form label:nth-child(1) {
-  background-image: url('./images/bin.png');
+  background-image: url('/images/bin.png');
   background-position: 50% -50%;
 }
 
 .hero-object-form label:nth-child(2) {
-  background-image: url('./images/generator.png');
+  background-image: url('/images/generator.png');
   background-position: 50% 50%;
 }
 
 .hero-object-form label:nth-child(3) {
-  background-image: url('./images/biodigester.png');
+  background-image: url('/images/biodigester.png');
   background-position: 50% 50%;
 }
 

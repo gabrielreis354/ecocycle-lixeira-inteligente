@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom"
 import { useMemo } from "react"
 import ComoFunciona from "../pages/ComoFunciona"
 import Dashboard from "../pages/Dashboard"
-import Header from "../components/Header"
+// import Header from '../components/Header'
 import Footer from "../components/Footer"
 
 function Router() {
@@ -24,7 +24,7 @@ function Router() {
 				<Routes>
 					<Route index path='/' element={ <Home/> } />
 					<Route path="/funcionamento" element={<ComoFunciona />} />
-					<Route path="/dashboard" element={<Dashboard />} />
+					<Route path="/dashboard/*" element={<Dashboard />} />
 					<Route path='*' element={ <></> }/>
 				</Routes>
 

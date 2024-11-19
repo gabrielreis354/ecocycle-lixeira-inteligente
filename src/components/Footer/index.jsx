@@ -10,7 +10,7 @@ function Footer() {
         </div>
         <div className="footer-content-bottom">
           <div className="copyright">
-            Projeto acadêmico para a
+            Projeto acadêmico para a {" "}
             <Link to={"https://fiap.com.br/"}>Fiap</Link>.
           </div>
           <nav>

@@ -1,6 +1,5 @@
 .containerForm {
   width: 100%;
-  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,5 +33,33 @@
   align-items: flex-start;
 }
 
-.submitButton {
+textarea {
+  resize: none;
+}
+
+.buttonWrapper button {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 3px solid #1db196;
+  background-color: #1db196;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.buttonWrapper button:hover {
+  background-color: transparent;
+  border: 3px solid #1db196;
+  color: #1db196;
+}
+
+.error {
+  width: 80%;
+  margin: 0 10px 10px 10px;
+  background-color: transparent;
+  color: tomato;
+  transition: 0.4s;
 }

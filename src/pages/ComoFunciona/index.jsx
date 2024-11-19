@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import "./index.scss";
 export default function ComoFunciona() {
   return (
@@ -81,7 +82,7 @@ export default function ComoFunciona() {
         </p>
       </section>
 
-      <button>Conhecer Plataforma</button>
+      <Link to="/dashboard">Conhecer Plataforma</Link>
     </div>
   );
 }
