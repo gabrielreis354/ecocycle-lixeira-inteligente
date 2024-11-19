@@ -1,0 +1,108 @@
+[
+    {
+      "id": 1,
+      "data": "2024-11-01",
+      "residuosProcessados": 12.5,
+      "energiaGerada": 8.2,
+      "emissaoEvitada": 6.3
+    },
+    {
+      "id": 2,
+      "data": "2024-11-02",
+      "residuosProcessados": 10.0,
+      "energiaGerada": 6.8,
+      "emissaoEvitada": 5.1
+    },
+    {
+      "id": 3,
+      "data": "2024-11-03",
+      "residuosProcessados": 15.3,
+      "energiaGerada": 10.5,
+      "emissaoEvitada": 7.9
+    },
+    {
+      "id": 4,
+      "data": "2024-11-04",
+      "residuosProcessados": 13.7,
+      "energiaGerada": 9.4,
+      "emissaoEvitada": 6.8
+    },
+    {
+      "id": 5,
+      "data": "2024-11-05",
+      "residuosProcessados": 11.2,
+      "energiaGerada": 7.8,
+      "emissaoEvitada": 5.6
+    },
+    {
+      "id": 6,
+      "data": "2024-11-06",
+      "residuosProcessados": 14.8,
+      "energiaGerada": 10.2,
+      "emissaoEvitada": 7.3
+    },
+    {
+      "id": 7,
+      "data": "2024-11-07",
+      "residuosProcessados": 16.4,
+      "energiaGerada": 11.3,
+      "emissaoEvitada": 8.1
+    },
+    {
+      "id": 8,
+      "data": "2024-11-08",
+      "residuosProcessados": 12.0,
+      "energiaGerada": 8.0,
+      "emissaoEvitada": 6.0
+    },
+    {
+      "id": 9,
+      "data": "2024-11-09",
+      "residuosProcessados": 17.6,
+      "energiaGerada": 12.1,
+      "emissaoEvitada": 8.7
+    },
+    {
+      "id": 10,
+      "data": "2024-11-10",
+      "residuosProcessados": 13.9,
+      "energiaGerada": 9.6,
+      "emissaoEvitada": 6.9
+    },
+    {
+      "id": 11,
+      "data": "2024-11-11",
+      "residuosProcessados": 15.0,
+      "energiaGerada": 10.0,
+      "emissaoEvitada": 7.5
+    },
+    {
+      "id": 12,
+      "data": "2024-11-12",
+      "residuosProcessados": 11.5,
+      "energiaGerada": 7.7,
+      "emissaoEvitada": 5.8
+    },
+    {
+      "id": 13,
+      "data": "2024-11-13",
+      "residuosProcessados": 18.3,
+      "energiaGerada": 12.9,
+      "emissaoEvitada": 9.2
+    },
+    {
+      "id": 14,
+      "data": "2024-11-14",
+      "residuosProcessados": 16.1,
+      "energiaGerada": 10.8,
+      "emissaoEvitada": 8.0
+    },
+    {
+      "id": 15,
+      "data": "2024-11-15",
+      "residuosProcessados": 14.0,
+      "energiaGerada": 9.5,
+      "emissaoEvitada": 7.1
+    }
+  ]
+  

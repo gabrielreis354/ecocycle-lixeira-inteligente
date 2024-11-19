@@ -1,39 +1,40 @@
 .monitoramento {
-    padding: 20px;
+  padding: 20px;
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 
-        .card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            flex: 1;
-            max-width: 300px;
-            min-width: 200px; // Para manter um tamanho mínimo
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      flex: 1;
+      max-width: 300px;
+      min-width: 200px; // Para manter um tamanho mínimo
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
 
-            .number {
-                font-size: 36px;
-                color: #2d8c3b;
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
+      .number {
+        font-size: 36px;
+        color: #1db196;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
-            .text {
-                font-size: 16px;
-                color: #555;
-            }
+      .text {
+        font-size: 16px;
+        color: #555;
+      }
 
-            &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-        }
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
     }
+  }
 }
