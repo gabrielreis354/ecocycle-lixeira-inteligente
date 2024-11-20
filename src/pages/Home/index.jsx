@@ -1,11 +1,12 @@
-import './index.scss'
-import { useState } from 'react'
-import SectionNews from '../../components/SectionNotice'
-import SectionBenefits from '../../components/SectionBenefits'
-import SvgArrow from '../../components/SvgArrow'
+import "./index.scss";
+import { useState } from "react";
+import SectionNews from "../../components/SectionNotice";
+import SectionBenefits from "../../components/SectionBenefits";
+import SvgArrow from "../../components/SvgArrow";
+import { Link } from "react-router-dom";
 
-import Equipe from "../../components/Equipe"
-import FaleConosco from "../../components/FaleConosco"
+import Equipe from "../../components/Equipe";
+import FaleConosco from "../../components/FaleConosco";
 
 function Home() {
   const [selectedProduct, setSelectedProduct] = useState("bin");
@@ -37,27 +38,27 @@ function Home() {
 
   return (
     <div className="home">
-      <div className='home-hero'>
-        <div className='home-hero-inner'>
-          <div className='hero-headline'>
-            <h1 className='hero-headline-title'>
+      <div className="home-hero">
+        <div className="home-hero-inner">
+          <div className="hero-headline">
+            <h1 className="hero-headline-title">
               EcoCycle: menos desperdício mais energia.
             </h1>
             <p className="hero-headline-subtitle">
               Converta resíduos orgânicos domésticos em energia elétrica
               sustentável e renovável.
             </p>
-            <button className="hero-headline-button">
-              <span className="button-icon">
-                <SvgArrow />
-              </span>
-              <div className='button-text'>
-                Conhecer
-              </div>
-            </button>
+            <Link to={"/dashboard/monitoramento"}>
+              <button className="hero-headline-button">
+                <span className="button-icon">
+                  <SvgArrow />
+                </span>
+                <div className="button-text">Conhecer</div>
+              </button>
+            </Link>
           </div>
-          <div className='hero-object'>
-            <div className='hero-object-form'>
+          <div className="hero-object">
+            <div className="hero-object-form">
               <form>
                 <label className={selectedProduct == "bin" ? "checked" : ""}>
                   <input
@@ -95,16 +96,16 @@ function Home() {
                 </label>
               </form>
             </div>
-            <div className='hero-object-product'>
-              <div className='product-img' style={
-                {
-                  backgroundImage: productsInfo[selectedProduct].path
-                }
-                }>
-              </div>
-              <div className='product-bubbles'>
-                <div className='product-bubble'></div>
-                <div className='product-bubble'></div>
+            <div className="hero-object-product">
+              <div
+                className="product-img"
+                style={{
+                  backgroundImage: productsInfo[selectedProduct].path,
+                }}
+              ></div>
+              <div className="product-bubbles">
+                <div className="product-bubble"></div>
+                <div className="product-bubble"></div>
               </div>
             </div>
 
@@ -113,18 +114,19 @@ function Home() {
                 className="object-label"
                 style={{
                   top: productsInfo[selectedProduct].top,
-                  left: productsInfo[selectedProduct].left
-                }}>
-                <div className='object-label-inner'>
-                  <div className='circle-outside'>
-                    <div className='circle-inside'></div>
+                  left: productsInfo[selectedProduct].left,
+                }}
+              >
+                <div className="object-label-inner">
+                  <div className="circle-outside">
+                    <div className="circle-inside"></div>
                   </div>
                   <div className="line">
                     <div className="line-horizontal"></div>
                     <div className="line-vertical"></div>
                   </div>
                 </div>
-                <div className='object-label-text'>
+                <div className="object-label-text">
                   {productsInfo[selectedProduct].label}
                 </div>
               </div>
@@ -149,15 +151,15 @@ function Home() {
         </div>
       </div>
 
-      <div className='section'>
-        <div className='section-content'>
-          <SectionNews/>
+      <div className="section">
+        <div className="section-content">
+          <SectionNews />
         </div>
       </div>
 
-      <div className='section '>
-        <div className='section-content'>
-          <SectionBenefits/>
+      <div className="section ">
+        <div className="section-content">
+          <SectionBenefits />
         </div>
       </div>
 
