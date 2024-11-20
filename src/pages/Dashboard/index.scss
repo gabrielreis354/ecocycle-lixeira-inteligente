@@ -1,59 +1,79 @@
 .dashboard {
-    display: grid;
-    grid-template-areas:
+  display: grid;
+  grid-template-areas:
     "header header"
     "sidebar main"
     "footer footer";
-    grid-template-rows: 60px auto 40px;
-    grid-template-columns: 200px auto;
-    height: 100vh;
+  grid-template-rows: 60px auto 40px;
+  grid-template-columns: 200px auto;
+  height: 100vh;
 
-    .header {
-        grid-area: header;
-        background-color: #223330;
-        color: #00dbb3;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 16px;
-        font-size: 20px;
-        font-weight: bold;
-    }
+  .header {
+    grid-area: header;
+    background-color: #223330;
+    color: #00dbb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-    // .sidebar {
-    //     grid-area: sidebar;
-    //     background-color: #f4f4f4;
-    //     padding: 16px;
-    //     border-right: 1px solid #ddd;
-    //     align-items: start;
-    //     justify-content: start;
+  // .sidebar {
+  //     grid-area: sidebar;
+  //     background-color: #f4f4f4;
+  //     padding: 16px;
+  //     border-right: 1px solid #ddd;
+  //     align-items: start;
+  //     justify-content: start;
 
-    //     .menu-item {
-    //         margin-bottom: 12px;
-    //         font-size: 16px;
-    //         color: #333;
-    //         cursor: pointer;
+  //     .menu-item {
+  //         margin-bottom: 12px;
+  //         font-size: 16px;
+  //         color: #333;
+  //         cursor: pointer;
 
-    //         &:hover {
-    //             color: #4a90e2;
-    //         }
-    //     }
-    // }
+  //         &:hover {
+  //             color: #4a90e2;
+  //         }
+  //     }
+  // }
 
-    .main {
-        grid-area: main;
-        background-color: #fff;
-        padding: 20px;
-        overflow-y: auto;
-    }
+  .main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: auto;
+  }
 
-    .footer {
-        grid-area: footer;
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-    }
+  .footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+
+@media print {
+  .header,
+  .sidebar {
+    display: none;
+  }
+
+  .dashboard {
+    grid: none;
+  }
+
+  .filtroTempo {
+    display: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
 }

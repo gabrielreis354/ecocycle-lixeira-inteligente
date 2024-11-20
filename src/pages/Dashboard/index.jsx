@@ -3,6 +3,7 @@ import Relatorio from "../../components/Relatorio";
 import Sidebar from "../../components/Sidebar";
 import "./index.scss";
 import {Navigate, Route, Routes} from "react-router-dom";
+import data from "../../assets/Data/data.json"
 
 export default function Dashboard() {
   return (
@@ -15,15 +16,12 @@ export default function Dashboard() {
         <div className="dashboard-content">
           <Routes>
             <Route index element={<Navigate to="/dashboard/monitoramento"/>}/>
-            <Route path="monitoramento" element={<Monitoramento/>}/>
-            <Route path="relatorios" element={<Relatorio/>}/>
+            <Route path="monitoramento" element={<Monitoramento data={data}/>}/>
+            <Route path="relatorios" element={<Relatorio data={data}/>}/>
 
           </Routes>
         </div>
       </div>
-
-
-      {/* <div className="footer">Footer</div> */}
     </div>
   )
     ;

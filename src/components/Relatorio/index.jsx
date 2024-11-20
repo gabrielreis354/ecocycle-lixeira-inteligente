@@ -1,9 +1,8 @@
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "./index.scss";
-import data from "../../assets/Data/data.json";
-// import { LineChart, Line, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 
-const Relatorio = () => {
+const Relatorio = ({data}) => {
   const [filtroInicio, setFiltroInicio] = useState("");
   const [filtroFim, setFiltroFim] = useState("");
 
@@ -12,31 +11,6 @@ const Relatorio = () => {
   const [totalEnergia, setTotalEnergia] = useState(0);
   const [totalResiduos, setTotalResiduos] = useState(0);
   const [totalCarbono, setTotalCarbono] = useState(0);
-
-  // const [filter, setFilter] = useState("weekly");
-  // const tableData = [
-  //   {
-  //     id: 1,
-  //     date: "2024-11-01",
-  //     wasteProcessed: "5 kg",
-  //     energyGenerated: "2.5 kWh",
-  //     carbonAvoided: "1 kg",
-  //   },
-  //   {
-  //     id: 2,
-  //     date: "2024-11-02",
-  //     wasteProcessed: "6 kg",
-  //     energyGenerated: "3.0 kWh",
-  //     carbonAvoided: "1.2 kg",
-  //   },
-  //   {
-  //     id: 3,
-  //     date: "2024-11-03",
-  //     wasteProcessed: "4 kg",
-  //     energyGenerated: "2.0 kWh",
-  //     carbonAvoided: "0.8 kg",
-  //   },
-  // ];
 
   useEffect(() => {
     const filtrarDados = () => {
@@ -52,7 +26,7 @@ const Relatorio = () => {
     const results = filtrarDados();
 
     setDadosFiltrados(results);
-  }, [filtroInicio, filtroFim]);
+  }, [filtroInicio, filtroFim, data]);
 
   useEffect(() => {
     const energia = dadosFiltrados.reduce(
@@ -77,29 +51,15 @@ const Relatorio = () => {
     window.print();
   };
 
+  const handleLimpar = () => {
+    setFiltroInicio("");
+    setFiltroFim("");
+  }
+
   return (
     <div className="relatorios-page">
-      {/* <header className="header">
-         <h1>Relatórios</h1>
-        <div className="filters">
-          <button onClick={() => setFilter('daily')} className={filter === 'daily' ? 'active' : ''}>Diário</button>
-          <button onClick={() => setFilter('weekly')} className={filter === 'weekly' ? 'active' : ''}>Semanal</button>
-          <button onClick={() => setFilter('monthly')} className={filter === 'monthly' ? 'active' : ''}>Mensal</button>
-        </div>
-      </header> */}
 
       <main className="main-content">
-        {/* <section className="chart-section">
-          <h2>Desempenho</h2>
-          {/* <ResponsiveContainer width="100%" height={300}>*/}
-        {/*  <LineChart data={chartData}>*/}
-        {/*    <Line type="monotone" dataKey="energy" stroke="#2d8c3b" strokeWidth={2} name="Energia Gerada" />*/}
-        {/*    <Line type="monotone" dataKey="carbon" stroke="#1f5635" strokeWidth={2} name="Carbono Evitado" />*/}
-        {/*    <Tooltip />*/}
-        {/*    <Legend />*/}
-        {/*  </LineChart>*/}
-        {/*</ResponsiveContainer>
-        </section> */}
 
         <section className="filtroTempo">
           <h2>Filtrar por período</h2>
@@ -122,7 +82,7 @@ const Relatorio = () => {
                 onChange={(e) => setFiltroFim(e.target.value)}
               />
             </div>
-            <button onClick={() => setFiltroInicio("") && setFiltroFim("")}>
+            <button onClick={handleLimpar}>
               Limpar Filtro
             </button>
           </div>
@@ -147,6 +107,7 @@ const Relatorio = () => {
                       day: "2-digit",
                       month: "2-digit",
                       year: "numeric",
+                      timeZone: "UTC",
                     })}
                   </td>
                   <td>{row.residuosProcessados} kg</td>
@@ -179,10 +140,6 @@ const Relatorio = () => {
           </div>
         </section>
       </main>
-
-      {/* <footer className="footer">
-        <button>Exportar Relatório</button>
-      </footer> */}
     </div>
   );
 };
