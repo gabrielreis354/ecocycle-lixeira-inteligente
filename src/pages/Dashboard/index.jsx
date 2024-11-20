@@ -22,9 +22,6 @@ export default function Dashboard() {
           </Routes>
         </div>
       </div>
-
-
-      {/* <div className="footer">Footer</div> */}
     </div>
   )
     ;

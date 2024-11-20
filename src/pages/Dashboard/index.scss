@@ -67,4 +67,13 @@
   .dashboard {
     grid: none;
   }
+
+  .filtroTempo {
+    display: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
 }
