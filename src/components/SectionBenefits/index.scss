@@ -126,6 +126,14 @@
   gap: 32px;
 }
 
+.card-module-inner#second-module {
+  background-image: url('/images/biodigester.png');
+}
+
+.card-module-inner#third-module {
+  background-image: url('/images/generator.png');
+}
+
 .card-module .card-title {
   font-size: 24px;
   font-weight: 500;
@@ -145,6 +153,10 @@
 .card-module:hover .card-module-inner {
   background-position: 10% 55%;
 }
+
+// .card-module:hover .card-module-inner#second-module {
+//   background-position: 10% 150%;
+// }
 
 .card-module:hover .card-title {
   opacity: 0;
