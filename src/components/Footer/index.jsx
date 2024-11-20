@@ -6,7 +6,10 @@ function Footer() {
     <footer>
       <div className="footer-content">
         <div className="footer-content-top">
-          <h1>EcoCycle</h1>
+          <h1 className="logoTitle">
+            <span>Eco</span>
+            <span>Cycle</span>
+          </h1>
         </div>
         <div className="footer-content-bottom">
           <div className="copyright">

@@ -160,6 +160,19 @@ function Home() {
           <SectionBenefits/>
         </div>
       </div>
+
+      <div className='section '>
+        <div className='section-content'>
+          <Equipe/>
+        </div>
+      </div>
+      
+      <div className='section '>
+        <div className='section-content'>
+          <FaleConosco/>
+        </div>
+      </div>
+      
     </div>
   );
 }
