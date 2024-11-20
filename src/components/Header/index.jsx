@@ -5,7 +5,12 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <h1 className="logoTitle">EcoCycle</h1>
+        <MenuLink to={'/'}>
+          <h1 className="logoTitle">
+            <span>Eco</span>
+            <span>Cycle</span>
+          </h1>
+        </MenuLink>
       </div>
       <div className="links">
         <MenuLink to={"/"}>Home</MenuLink>
