@@ -45,6 +45,7 @@ const MonitorHome = ({ data }) => {
   const labels = data.map((item) => transformStringtoDate(item.data)); // Exemplo: ["2024-11-13", "2024-11-14", "2024-11-15"]
   const energiaGerada = data.map((item) => item.energiaGerada); // Exemplo: [1.5, 2.1, 1.8]
   const carbonoEvitado = data.map((item) => item.emissaoEvitada); // Exemplo: [0.3, 0.5, 0.4]
+  const residuosProcessados = data.map(item => item.residuosProcessados); // Exemplo: [2.0, 3.5, 2.8]
 
   // Configurando os dados do gráfico
   const dataChart = {
@@ -62,6 +63,13 @@ const MonitorHome = ({ data }) => {
         data: carbonoEvitado,
         backgroundColor: "rgba(255, 99, 132, 0.5)",
         borderColor: "rgba(255, 99, 132, 1)",
+        borderWidth: 1,
+      },
+      {
+        label: "Resíduos Processados (kg)",
+        data: residuosProcessados,
+        backgroundColor: "rgba(54, 162, 235, 0.5)",
+        borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 1,
       },
     ],
