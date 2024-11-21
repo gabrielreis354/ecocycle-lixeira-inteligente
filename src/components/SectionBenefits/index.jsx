@@ -26,7 +26,7 @@ function SectionBenefits() {
         <div className="modules">
           <div className="module">
             <div className="card-module">
-              <div className="card-module-inner">
+              <div className="card-module-inner" >
                 <div className="card-title">Modulo 01</div>
                 <div className="about-module">
                   A lixeira inteligente da EcoCycle facilita o descarte
