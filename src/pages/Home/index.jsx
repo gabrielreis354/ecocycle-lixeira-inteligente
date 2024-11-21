@@ -2,6 +2,7 @@ import "./index.scss";
 import { useState } from "react";
 import SectionNews from "../../components/SectionNotice";
 import SectionBenefits from "../../components/SectionBenefits";
+import SectionVideo from "../../components/SectionVideo";
 import SvgArrow from "../../components/SvgArrow";
 import { Link } from "react-router-dom";
 
@@ -172,6 +173,13 @@ function Home() {
       <div className='section ' id="contact">
         <div className='section-content'>
           <FaleConosco/>
+        </div>
+      </div>
+
+            
+      <div className='section ' id="video">
+        <div className='section-content'>
+          <SectionVideo/>
         </div>
       </div>
       
