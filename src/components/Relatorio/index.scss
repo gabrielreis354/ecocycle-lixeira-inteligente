@@ -231,4 +231,19 @@
   .wrapper-button {
     display: none !important;;
   }
+  .dashboard {
+    padding-top: 80px;
+  }
+  .dashboard ::-webkit-scrollbar { 
+    display: none;
+  }
+  .dashboard::after {
+    content: "Dados exportados";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
