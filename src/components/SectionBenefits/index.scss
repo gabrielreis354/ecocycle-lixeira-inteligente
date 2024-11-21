@@ -152,11 +152,8 @@
 
 .card-module:hover .card-module-inner {
   background-position: 10% 55%;
+  cursor: pointer;
 }
-
-// .card-module:hover .card-module-inner#second-module {
-//   background-position: 10% 150%;
-// }
 
 .card-module:hover .card-title {
   opacity: 0;

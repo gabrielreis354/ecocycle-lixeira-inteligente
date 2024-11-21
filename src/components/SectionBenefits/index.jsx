@@ -9,7 +9,7 @@ function SectionBenefits() {
             Solução
             <span></span>
           </div>
-          <div className="section-heading-title">03 modulos</div>
+          <div className="section-heading-title">Conheça os módulos!</div>
         </div>
 
         <div className="section-heading-right">
