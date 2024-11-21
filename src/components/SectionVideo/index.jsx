@@ -18,7 +18,7 @@ function SectionVideo ( ) {
               Vídeo
               <span></span>
             </div>
-            <div className="section-heading-title">Veja o nosso vídeo pitch!</div>
+            <div className="section-heading-title">Veja nossa apresentação!</div>
           </div>
 
         </div>

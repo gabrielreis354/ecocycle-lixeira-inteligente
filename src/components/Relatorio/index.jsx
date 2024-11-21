@@ -89,7 +89,6 @@ const Relatorio = ({data}) => {
         </section>
 
         <section className="table-section">
-          {/* <h2>Detalhes</h2> */}
           <table>
             <thead>
               <tr>
