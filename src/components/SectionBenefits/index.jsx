@@ -43,11 +43,9 @@ function SectionBenefits() {
               <div className="card-module-inner" id="second-module">
                 <div className="card-title">Modulo 02</div>
                 <div className="about-module">
-                  Converte resíduos orgânicos em biogás. Ele reduz o volume de
-                  lixo destinado a aterros sanitários, evitando a emissão de
-                  gases poluentes como o metano. O biogás gerado pode ser
-                  utilizado para atividades domésticas como cozinhar ou aquecer
-                  água, fechando o ciclo de sustentabilidade.
+                  Este módulo é o biodigestor que converte os resíduos orgânicos captados pela lixeira inteligente em biogás. 
+                  O biogás produzido, composto majoritariamente de metano (CH₄), é capturado 
+                  e armazenado para ser utilizado no próximo módulo: o gerador de eletricidade.
                 </div>
               </div>
             </div>
@@ -57,10 +55,10 @@ function SectionBenefits() {
               <div className="card-module-inner" id="third-module">
                 <div className="card-title">Modulo 03</div>
                 <div className="about-module">
-                  Transforma o biogás produzido pelo biodigestor em energia
+                  O último módulo é o gerador, o qual transforma o biogás produzido pelo biodigestor em energia
                   elétrica limpa, reduzindo os custos com eletricidade. Assim,
                   mitiga a pegada de carbono e tornando o consumo energético
-                  mais sustentável.
+                  mais sustentável!
                 </div>
               </div>
             </div>
