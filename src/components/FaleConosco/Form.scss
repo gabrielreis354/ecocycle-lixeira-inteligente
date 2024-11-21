@@ -1,36 +1,22 @@
-.containerForm {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
 
-.title {
-  font-size: 24px;
-  color: #1db196;
-}
 
-.input {
-  width: 100%;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 2px solid #1db196;
-  background-color: #223330;
-  color: #1db196;
-  outline: 0;
-}
 
 .inputLabel {
-  font-size: 18px;
-  color: #1db196;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 20px;
+  padding: 0px 10px;
+  background: #faffff;
+  font-size: 14px;
+  color: #12a680;
 }
 
 .inputWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 
 textarea {
@@ -38,22 +24,23 @@ textarea {
 }
 
 .buttonWrapper button {
-  margin-top: 20px;
+  font-family: "Nobile", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
   margin-left: 10px;
   padding: 10px 20px;
   border-radius: 8px;
-  border: 3px solid #1db196;
-  background-color: #1db196;
-  color: #fff;
+  border: 2px solid #12a680;
+  background: transparent;
+  color: #12a680;
   cursor: pointer;
   font-size: 18px;
   transition: 0.4s;
 }
 
 .buttonWrapper button:hover {
-  background-color: transparent;
-  border: 3px solid #1db196;
-  color: #1db196;
+  background-color: #12a680;
+  color: #faffff;
 }
 
 .error {
@@ -62,4 +49,64 @@ textarea {
   background-color: transparent;
   color: tomato;
   transition: 0.4s;
+}
+
+
+.section-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-contact .section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  gap: 20px;
+}
+
+.section-contact .section-heading-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #12a680;
+  font-weight: 400;
+}
+
+.section-contact .section-heading-text span {
+  display: flex;
+  width: 50px;
+  height: 2px;
+  background: #12a680;
+}
+
+.section-contact .section-heading-title {
+  font-size: 48px;
+  color: #12a680;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.input {
+  width: 100%;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #12a680;
+  background-color: transparent;
+  color: #1db196;
+  outline: 0;
+}
+
+.section-contact ::placeholder {
+  font-family: "Nobile", sans-serif;
+  color: #252525;
+  font-size: 14px;
+  opacity: 50%;
 }

@@ -1,4 +1,4 @@
-import Card from "../Card";
+import CardTeam from "../CardTeam";
 import "./Equipe.scss";
 const EquipeInfo = [
   {
@@ -28,7 +28,7 @@ export default function Equipe() {
     <div className="section-teams">
       <div className='section-heading'>
         <div className='section-heading-text'>
-          Solução
+          Equipe
           <span></span>
         </div>
         <div className='section-heading-title'>
@@ -36,16 +36,16 @@ export default function Equipe() {
         </div>
 
         <div className='section-heading-description'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed quas magni optio maxime, architecto laborum et aut nemo harum, aspernatur aperiam delectus incidunt natus laboriosam consequatur doloribus unde? Optio.
+         Conheça as pessoas por trás da EcoCycle. 
         </div>
       </div>
 
       <div className="team-cards">
         {EquipeInfo.map((pessoa, index) => {
           return (
-            <Card key={index} urlFoto={pessoa.imagem} altNome={pessoa.nome}>
+            <CardTeam key={index} urlFoto={pessoa.imagem} altNome={pessoa.nome}>
               <h3>{pessoa.nome}</h3>
-            </Card>
+            </CardTeam>
           )
         })}
       </div>

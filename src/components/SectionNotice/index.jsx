@@ -17,10 +17,10 @@ function SectionNews () {
         <span>Alerta Global:</span> desperdício de Recursos Orgânicos Colocam a Sustentabilidade em Risco.
       </div>
       <div className='section-heading-description'>
-        O Brasil enfrenta desafios críticos em relação ao desperdício de recursos orgânicos: 
+        O Brasil enfrenta desafios críticos em relação ao desperdício de recursos orgânicos:  
         <span>apenas 4%</span> dos resíduos sólidos são reaproveitados, enquanto o desperdício
-        de alimentos coloca o país <span>entre os 10 maiores do mundo</span>, mas possui grande potencial  
-        para liderar em sustentabilidade com soluções como o biogás e o reaproveitamento de resíduos.
+        de alimentos coloca o país <span>entre os 10 maiores do mundo</span>. Porém, é evidente
+        que o Brasil possui grande potencial para liderar em sustentabilidade.
       </div>
     </div>
     <div className='section-item'>

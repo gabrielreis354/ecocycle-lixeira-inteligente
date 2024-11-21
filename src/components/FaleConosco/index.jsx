@@ -41,74 +41,85 @@ export default function FaleConosco() {
   }, [formCliente]);
 
   return (
-    <div className="containerForm">
-      <h2 className="title">Fale Conosco</h2>
+    <div className="section-contact">
+      <div className='section-heading'>
+        <div className='section-heading-text'>
+          Contato
+          <span></span>
+        </div>
+        <div className='section-heading-title'>
+          Fale Conosco!
+        </div>
+      </div>
+      <div className="section-form">
 
-      <form onSubmit={handleSubmit(inserirCliente)}>
-        <div className="inputWrapper">
-          <label className="inputLabel" htmlFor="nome">
-            Nome:
-          </label>
-          <input
-            id="nome"
-            className="input"
-            type="text"
-            placeholder=""
-            {...register("nome")}
-          />
-          {errors.nome ? (
-            <span className="error">{errors.nome.message}</span>
-          ) : null}
-        </div>
-        <div className="inputWrapper">
-          <label className="inputLabel" htmlFor="email">
-            Email:
-          </label>
-          <input
-            id="email"
-            className="input"
-            type="email"
-            placeholder=""
-            {...register("email")}
-          />
-          {errors.email ? (
-            <span className="error">{errors.email.message}</span>
-          ) : null}
-        </div>
-        <div className="inputWrapper">
-          <label className="inputLabel" htmlFor="tipo">
-            Tipo:
-          </label>
-          <select name="tipo" id="tipo" className="input" {...register("tipo")}>
-            <option>Empresa</option>
-            <option>Pessoa Física</option>
-          </select>
-          {errors.tipo ? (
-            <span className="error">{errors.tipo.message}</span>
-          ) : null}
-        </div>
-        <div className="inputWrapper">
-          <label className="inputLabel" htmlFor="mensagem">
-            Mensagem:
-          </label>
-          <textarea
-            className="input"
-            name="mensagem"
-            id="mensagem"
-            cols="30"
-            rows="10"
-            {...register("mensagem")}
-          ></textarea>
-          {errors.mensagem ? (
-            <span className="error">{errors.mensagem.message}</span>
-          ) : null}
-        </div>
+        <form onSubmit={handleSubmit(inserirCliente)}>
+          <div className="inputWrapper">
+            <label className="inputLabel" htmlFor="nome">
+              Nome:
+            </label>
+            <input
+              id="nome"
+              className="input"
+              type="text"
+              placeholder="Coloque seu nome aqui"
+              {...register("nome")}
+            />
+            {errors.nome ? (
+              <span className="error">{errors.nome.message}</span>
+            ) : null}
+          </div>
+          <div className="inputWrapper">
+            <label className="inputLabel" htmlFor="email">
+              Email:
+            </label>
+            <input
+              id="email"
+              className="input"
+              type="email"
+              placeholder="Coloque seu melhor email aqui"
+              {...register("email")}
+            />
+            {errors.email ? (
+              <span className="error">{errors.email.message}</span>
+            ) : null}
+          </div>
+          <div className="inputWrapper">
+            <label className="inputLabel" htmlFor="tipo">
+              Tipo:
+            </label>
+            <select name="tipo" id="tipo" className="input" {...register("tipo")}>
+              <option>Empresa</option>
+              <option>Pessoa Física</option>
+            </select>
+            {errors.tipo ? (
+              <span className="error">{errors.tipo.message}</span>
+            ) : null}
+          </div>
+          <div className="inputWrapper">
+            <label className="inputLabel" htmlFor="mensagem">
+              Mensagem:
+            </label>
+            <textarea
+              className="input"
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+              placeholder="Coloque aqui a sua mensagem"
+              {...register("mensagem")}
+            ></textarea>
+            {errors.mensagem ? (
+              <span className="error">{errors.mensagem.message}</span>
+            ) : null}
+          </div>
 
-        <div className="buttonWrapper">
-          <button type="submit">Enviar</button>
-        </div>
+          <div className="buttonWrapper">
+            <button type="submit">Enviar</button>
+          </div>
 
-      </form>
+        </form>
+      </div>
     </div>
   );
 }

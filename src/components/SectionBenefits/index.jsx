@@ -14,10 +14,10 @@ function SectionBenefits() {
 
         <div className="section-heading-right">
           <div className="section-heading-description">
-            Nosso sistema integra soluções tecnológicas que otimizam o
-            reaproveitamento de resíduos domésticos, reduzindo impactos
-            ambientais e gerando valor direto para sua residência ou empresa.
-            Conheça os benefícios de cada módulo do nosso sistema inovador:
+            Nosso sistema de 3 módulos utiliza tecnologia inovadora para 
+            reaproveitar resíduos domésticos, transformando-os em energia 
+            sustentável. Simplificamos o processo, ajudando você a fazer 
+            a diferença."
           </div>
         </div>
       </div>

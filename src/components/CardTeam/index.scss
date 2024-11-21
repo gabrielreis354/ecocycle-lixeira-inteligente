@@ -1,0 +1,61 @@
+.card-team {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  width: 240px;
+  aspect-ratio: 3/4;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid #ffffff;
+  zoom: 80%;
+}
+
+.card-team::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background: #12a680;
+  filter: brightness(1.25) blur(75px);
+  scale: 80%;
+  z-index: -1;
+}
+
+.name {
+  padding: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-team:nth-child(1) .image{
+  width: 155%;
+  margin-top: -60px;
+}
+
+.card-team:nth-child(2) .image{
+  width: 103%;
+  margin-top: 5px;
+}
+
+.card-team:nth-child(3) .image{
+  width: 140%;
+  margin-top: -50px;
+}
+
+.card-team:nth-child(4) .image{
+  width: 100%;
+  margin-top: -10px;
+}
+
+.card-team:nth-child(5) .image{
+  width: 100%;
+  margin-top: -20px;
+}

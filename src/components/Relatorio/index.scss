@@ -220,14 +220,15 @@
   footer,
   aside,
   form {
-    display: none;
+    display: none !important;
   }
   .dashboard {
-    display: flex;
-    flex-direction: column;
+    display: flex !important; 
+    flex-direction: column !important;
   }
   .sidebar,
+  .header,
   .wrapper-button {
-    display: none;
+    display: none !important;;
   }
 }
