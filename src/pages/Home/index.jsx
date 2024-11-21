@@ -48,14 +48,14 @@ function Home() {
               Converta resíduos orgânicos domésticos em energia elétrica
               sustentável e renovável.
             </p>
-            <Link to={"/dashboard/monitoramento"}>
+            <a href={"#news"}>
               <button className="hero-headline-button">
                 <span className="button-icon">
                   <SvgArrow />
                 </span>
                 <div className="button-text">Conhecer</div>
               </button>
-            </Link>
+            </a>
           </div>
           <div className="hero-object">
             <div className="hero-object-form">
@@ -151,25 +151,25 @@ function Home() {
         </div>
       </div>
 
-      <div className="section">
+      <div className="section" id="news">
         <div className="section-content">
           <SectionNews />
         </div>
       </div>
 
-      <div className="section ">
+      <div className="section" id="benefits">
         <div className="section-content">
           <SectionBenefits />
         </div>
       </div>
 
-      <div className='section '>
+      <div className='section ' id="team">
         <div className='section-content'>
           <Equipe/>
         </div>
       </div>
       
-      <div className='section '>
+      <div className='section ' id="contact">
         <div className='section-content'>
           <FaleConosco/>
         </div>
