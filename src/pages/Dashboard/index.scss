@@ -20,26 +20,6 @@
     font-weight: bold;
   }
 
-  // .sidebar {
-  //     grid-area: sidebar;
-  //     background-color: #f4f4f4;
-  //     padding: 16px;
-  //     border-right: 1px solid #ddd;
-  //     align-items: start;
-  //     justify-content: start;
-
-  //     .menu-item {
-  //         margin-bottom: 12px;
-  //         font-size: 16px;
-  //         color: #333;
-  //         cursor: pointer;
-
-  //         &:hover {
-  //             color: #4a90e2;
-  //         }
-  //     }
-  // }
-
   .main {
     grid-area: main;
     background-color: #fff;
@@ -59,13 +39,17 @@
 }
 
 @media print {
-  .header,
-  .sidebar {
+  .dashboard .header,
+  .dashboard .sidebar {
     display: none;
   }
 
   .dashboard {
     grid: none;
+
+    .main {
+      grid-area: none;
+    }
   }
 
   .filtroTempo {
@@ -74,6 +58,6 @@
 
   @page {
     size: A4;
-    margin: 0;
+    margin:0;
   }
 }
