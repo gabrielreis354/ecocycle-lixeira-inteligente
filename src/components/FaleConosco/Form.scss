@@ -23,6 +23,12 @@ textarea {
   resize: none;
 }
 
+.section-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .buttonWrapper button {
   font-family: "Nobile", sans-serif;
   font-weight: 500;
