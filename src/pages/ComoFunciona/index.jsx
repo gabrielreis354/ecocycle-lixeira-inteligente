@@ -31,7 +31,7 @@ export default function ComoFunciona() {
       </section>
 
       <section>
-        <h2 className="subtitle">2.0 Separação Inteligente de Resíduos</h2>
+        <h2 className="subtitle">2.0 Digestão dos Resíduos Orgânicos</h2>
         <p>
           Os resíduos orgânicos separados são enviados para o biodigestor
           residencial da EcoCycle. Este equipamento utiliza o processo de

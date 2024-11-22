@@ -56,3 +56,6 @@ ecocycle_manager/
 ## 📖 Notas Adicionais
 
 - Certifique-se de que a porta `5173` está disponível para evitar conflitos.
+
+## Link do repositório online
+- [https://gs-ecocycle-solution.netlify.app]
