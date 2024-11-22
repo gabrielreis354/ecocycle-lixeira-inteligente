@@ -28,7 +28,7 @@ function SectionVideo ( ) {
         <div className='video'>
           {!isPaused ? (
                 <iframe
-                    src={`https://www.youtube.com/embed/hXAfAjpD2R8?autoplay=1`}
+                    src={"https://www.youtube.com/embed/tPxkAXoLz9Y?autoplay=1"}
                     frameBorder="0"
                     allow="autoplay; fullscreen"
                     allowFullScreen
