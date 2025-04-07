@@ -13,6 +13,24 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 ---
 
+---
+
+
+## Tecnologias Usadas
+
+- React
+- CSS
+- ChartJS
+
+## 🛠️ Funcionalidades
+
+- [x] Explicação do produto
+- [x] Consumo de Dados
+- [x] Interface com dashboard
+- [x] Apresentação da equipe 
+
+
+---
 ## 🚀 Como Rodar o Projeto
 
 1. **Clone o repositório:**
