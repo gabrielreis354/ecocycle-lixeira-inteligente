@@ -19,7 +19,7 @@ Antes de começar, você precisará ter instalado em sua máquina:
 ## Tecnologias Usadas
 
 - React
-- CSS
+- SCSS
 - ChartJS
 
 ## 🛠️ Funcionalidades
@@ -29,6 +29,12 @@ Antes de começar, você precisará ter instalado em sua máquina:
 - [x] Interface com dashboard
 - [x] Apresentação da equipe 
 
+
+## Screnshots
+
+![image](https://github.com/user-attachments/assets/daad38cc-96c9-4654-b02e-7392e0386857)
+![image](https://github.com/user-attachments/assets/01311f91-b0e1-47b5-95c2-b3a8fbb5a6a7)
+![image](https://github.com/user-attachments/assets/eb60e014-93dc-487d-95f7-3429b6eb954e)
 
 ---
 ## 🚀 Como Rodar o Projeto
